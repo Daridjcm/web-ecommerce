@@ -20,7 +20,7 @@ img{
 .header{
     display: flex;
     align-items: center;
-    min-height: 80vh;
+    min-height: 17vh;
     background-color: aliceblue;
     padding: 70 0;
 }
