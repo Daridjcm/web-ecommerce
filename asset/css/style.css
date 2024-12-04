@@ -164,7 +164,7 @@ th td {
 .ofert-1 {
     display: flex;
     align-items: center;
-    flex-basis: calc(33.3% -15px);
+    flex-basis: calc(33.3% - 15px);
     background-color: #f5f5f5;
     padding: 35px;
 }
@@ -255,7 +255,7 @@ th td {
 }
 
 .icon-1{
-    flex-basis: calc(33.3% -30px);
+    flex-basis: calc(33.3% - 30px);
     display: flex;
     align-items: center;
     justify-content: space-between;

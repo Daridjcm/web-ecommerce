@@ -1,6 +1,6 @@
 const carrito = document.getElementById('carrito');
 const elementos1 = document.getElementById('lista-1');
-const lista = document.getElementById('#lista-carrito tbody');
+const lista = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 
 cargarEventListeners();
@@ -23,7 +23,7 @@ function leerDatosElemento(elemento) {
     const infoElemento = {
         imagen: elemento.querySelector('img').src,
         titulo: elemento.querySelector('h3').textContent,
-        precio: elemento.querySelector('precio').textContent,
+        precio: elemento.querySelector('.precio').textContent,
         id: elemento.querySelector('a').getAttribute('data-id')
     }
     inserttarCarrito(infoElemento);
@@ -50,7 +50,7 @@ function inserttarCarrito(elemento) {
 }
 
 function eliminarElemento(e) {
-    arguments.preventDefault();
+    e.preventDefault();
     let elemento,
         elementoId;
     if(e.target.classList.contains('borrar')) {
