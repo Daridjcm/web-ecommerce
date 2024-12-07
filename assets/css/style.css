@@ -235,24 +235,78 @@ th td {
     color: #111111;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    margin-bottom: 15px;
-}
-#about{
-    height: 100vh;
-    background-color: #f4f4f4;
+    margin-bottom: 10px;
 }
 
-#contact{
-    height: 100vh;
-    background-color: black;
-    text-align: center;
+.contact{
+    width: 1200px;
+    margin: 0% auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-section{
-    padding: 2em 0;
+h2 {
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-top-color: #000000;
+    max-width: 200px;
+    margin: 0% auto;
+    box-sizing: border-box;
+    text-align: center;
+    color: #333;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+   width: 800px;
+   margin-bottom: 5px;
+   margin: 0% auto;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    color: #555;
+}
+input, textarea, button {
+    width: 800px;
+    margin: 0% auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Times, 'Times New Roman', serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea {
+    resize: vertical;
+    min-height: 100px;
     
 }
-main{
-    margin-top: 4em;
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.info {
+    margin-top: 20px;
+    text-align: center;
+    color: #555;
+}
+.info a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.info a:hover {
+    text-decoration: underline;
 }
 
 

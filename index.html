@@ -308,7 +308,7 @@
       .subtitulo-con-fondo {
           background-image: url('./assets/img/imagentitulo.jpg'); /* Ruta correcta de la imagen */
           width: 1200px;
-          background-position:center  center;
+          background-position:center center;
           background-attachment: fixed;
           text-align: center;
           margin: 0% auto;
@@ -379,8 +379,26 @@
 <!------------------------------------------------>
 <main>
   <section id="contact">
-    <p style="font-size:30px; font-family:'Oswald', sans-serif;  color: white;">Contacto</p>
+      <h2  style="font-size:30px; font-family:'Oswald', sans-serif;  color: rgb(70, 64, 64);">Contáctanos</h2>
+      <form action="mailto:tu-email@dominio.com" method="post" enctype="text/plain">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="telefono">Teléfono (opcional):</label>
+          <input type="tel" id="telefono" name="telefono">
+          
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          
+          <button type="submit">Enviar</button>
+      </form> 
   </section>
  </main>
+ <footer style="text-align: center; margin-top: 20px; padding: 10px; background-color: #f1f1f1;">
+  &copy; 2024 LUMINE. Todos los derechos reservados.
+ </footer>
   </body>
 </html>
